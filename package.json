@@ -2,7 +2,7 @@
   "name": "mern-skeleton",
   "version": "1.0.0",
   "description": "Skeleton for future social-media application",
-  "main": "index.js",
+  "main": "main.js",
   "repository": "https://github.com/wadewilsones/WEB-215-Lesson02.git",
   "author": "Ulada <uladaharanina@gmail.com>",
   "license": "MIT",
@@ -16,6 +16,7 @@
     "@webpack-cli/generators": "^2.4.2",
     "babel-loader": "^8.2.5",
     "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {

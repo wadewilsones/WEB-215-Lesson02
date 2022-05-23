@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = require('webpack')
+const webpack = require('webpack');
 const CURRENT_WORKING_DER = process.cwd();
 
 const config = {

@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack')
 const CURRENT_WORKING_DER = process.cwd();
-const nodeExternals = require('webpach-node-externals');
+const nodeExternals = require('webpack-node-externals');
 
 const config = {
     name:"server",
