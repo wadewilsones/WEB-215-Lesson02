@@ -5,8 +5,16 @@ import cors from 'cors';
 import compress from 'compression';
 import helmet from 'helmet';
 
+import Template from './../template';
+
 const app = express();
 
+
+/*API*/
+
+app.get('/', (req,res) => {
+        res.status(200).send(Template())
+})
 
 /*Express Config*/
 
