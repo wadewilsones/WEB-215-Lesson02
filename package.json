@@ -6,5 +6,10 @@
   "repository": "https://github.com/wadewilsones/WEB-215-Lesson02.git",
   "author": "Ulada <uladaharanina@gmail.com>",
   "license": "MIT",
-  "private": null
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "babel-loader": "^8.2.5"
+  }
 }
