@@ -2,7 +2,7 @@
   "name": "mern-skeleton",
   "version": "1.0.0",
   "description": "Skeleton for future social-media application",
-  "main": "server.js",
+  "main": "./server/server.js",
   "repository": "https://github.com/wadewilsones/WEB-215-Lesson02.git",
   "author": "Ulada <uladaharanina@gmail.com>",
   "license": "MIT",
