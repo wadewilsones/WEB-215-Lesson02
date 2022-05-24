@@ -52,6 +52,8 @@ UserSchema.path('hashed_password').validate(function(v){
 }, null)
 
 
+//Method of our schema
+
 UserSchema.methods = {
     authenticate: function(plainText){
         return this.encryptPassword(plainText) === this.hashed_password

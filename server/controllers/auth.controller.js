@@ -1,6 +1,6 @@
 import User from '../models/user.model'
 import jwt from 'jsonwebtoken';
-import expressJwt from 'express-jwt';
+import { expressjwt } from "express-jwt";
 import config from './../../config/config'
 
 const signin = async (req,res) => {
@@ -52,9 +52,10 @@ const signout = (req,res) => {
 };
 
 
-const requireSignin = () => expressJwt({ // verify that the request has a valid JWT in the Autherization header
+const requireSignin = () => expressjwt({ // verify that the request has a valid JWT in the Autherization header
     secret: config.jwtSecret,
-    userProperty: 'auth'
+    requestProperty: 'auth',
+    algorithms: ["HS256"]
   });
 
 
