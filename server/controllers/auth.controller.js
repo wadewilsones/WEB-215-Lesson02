@@ -52,20 +52,20 @@ const signout = (req,res) => {
 };
 
 
-const requireSignin = () => expressJwt({
+const requireSignin = () => expressJwt({ // verify that the request has a valid JWT in the Autherization header
     secret: config.jwtSecret,
     userProperty: 'auth'
   });
 
 
 const hasAuthorization = (req, res, next) => {
-    const authorized = req.profile && req.auth && req.profile._id == req.auth._id
+    const authorized = req.profile && req.auth && req.profile._id == req.auth._id //req.auth is populated by express-jwt in requreSignin, req.profile is populated by userByID in user.controller.js
     if (!(authorized)) {
       return res.status('403').json({
         error: "User is not authorized"
       })
     }
-    next()
+    next() // proceed to the route method
   }
 
 export default { signin, signout, requireSignin, hasAuthorization }
