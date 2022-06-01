@@ -13,7 +13,7 @@ import Template from './../template';
 const app = express();
 devBundle.compile(app);
 
-const CURRENT_WORK_DIR = process.cwd();
+const CURRENT_WORKING_DIR = process.cwd();
 app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')));
 
 /*API*/
