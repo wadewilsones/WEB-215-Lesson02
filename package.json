@@ -8,18 +8,23 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "development": "nodemon"
+    "dev": "nodemon"
   },
   "devDependencies": {
     "@babel/core": "^7.18.0",
     "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.17.12",
     "@webpack-cli/generators": "^2.4.2",
     "babel-loader": "^8.2.5",
+    "file-loader": "^6.2.0",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
+    "webpack-dev-middleware": "^5.3.3",
+    "webpack-hot-middleware": "^2.25.1",
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
+    "@hot-loader/react-dom": "^17.0.2",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -32,6 +37,7 @@
     "mongodb": "^4.6.0",
     "mongoose": "^6.3.4",
     "nodemon": "^2.0.16",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-hot-loader": "^4.13.0"
   }
 }
