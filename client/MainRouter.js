@@ -1,15 +1,16 @@
 import React from 'react'
-import {Route, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './core/Home'
 
 
 const MainRouter = () => {
-    return (<div>
-      <Menu/>
+    return (
       <BrowserRouter>
-        <Route exact path="/" element={Home}/>
+        <Routes>
+        <Route exact path="/" element={ <Home /> }></Route>
+        </Routes>
       </BrowserRouter>
-    </div>)
+   )
 }
 
 export default MainRouter
